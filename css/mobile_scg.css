@@ -1,0 +1,433 @@
+@charset "utf-8";
+
+@media screen and (max-width: 600px) {
+    #wrap {
+        width: 100%;
+        background: #f3f0ee;
+        overflow: hidden;
+    }
+    section {
+        background: #fff;
+        padding: 35px 5%;
+        box-sizing: border-box;
+        margin-bottom: 15px;
+    }
+    .inner {width: 100%;}
+    .title_area h2 {font-size: 22px;}
+    .title_area .title_outline {font-size: 65px;}
+    
+    /* header */
+    header {
+        background: #fff;
+        margin-top: 0;
+        padding-top: 20px;
+    }
+    header .inner_header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    header .logo {
+        width: 150px; 
+        height: 50px;
+        order: 2;
+    }
+    header .sns {
+        position: static;
+        width: 12%;
+        order: 1;
+    }
+    header .nav_util {
+        position: static;
+        width: 12%;
+        order: 3;
+        text-align: right;
+        margin-right: 10px;  
+    }
+    header .btn_reserve {display: none;}
+    header .nav_util .btn_mobile {
+        position: static;
+    }
+
+    /* gnb_area */
+    .gnb_area {
+        width: 100%;
+        margin: 20px auto 0;
+    }
+    .gnb_area .gnb {
+        display: block;
+        background: #929394;
+        white-space: nowrap;
+    }
+    .gnb_area .gnb > li {display: inline-block;}
+    .gnb_area .gnb > li > a {
+        height: 40px;
+        padding: 4px 15px;
+        line-height: 40px;
+        font-size: 15px;
+        color: rgba(255,255,255,0.7)
+    }
+    .gnb_area .gnb > li:hover .sub {
+        display: none;
+    }
+
+    /* main_slide */
+    .main_slider {
+        width: 100%;
+        height: 60vh;
+    }
+    .main_slider .mainBg {   
+        height: 60vh;
+        clip-path: none;
+    }    
+    .mainBg .main_text {
+        width: 100%;        
+        top: 45%; right: 0;   
+        transform: translateY(-50%);
+        text-align: center;
+    }
+    .mainBg .main_text .m_title {
+        font-size: 18px;
+        margin-bottom: 0;
+        opacity: 0.7;
+    }
+    .mainBg .main_text .b_title {
+        font-size: 62px;
+        letter-spacing: 16px;
+    }
+    .mainBg .main_text2 {
+        bottom: 30px;
+        font-weight: 600;
+        font-size: 20px;
+        color: #fff;
+        opacity: 0.9; 
+    }
+
+    /* story */
+    #story .cont_wrap {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #story .cont_wrap > .title_area {
+        width: 60%;
+        margin-bottom: 30px;
+    }
+    #story .cont_wrap > .story_text {
+        width: 65%;
+    }
+    .story_text .b_text {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    .story_text .text {
+        line-height: 1.7;
+        font-size: 16px;
+        margin-bottom: 50px;
+        word-break: keep-all;
+    }
+    .story_text p:last-child {margin-bottom: 0;}
+    #story .cont_wrap > .side_img {
+        width: 20%;  
+        text-align: right;
+    }
+    #story .cont_wrap > .side_img img {
+        width: 60px;
+    }
+
+    /* show - 공연전시정보 */
+    #show .title_area {
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+    #show .title_area .left_title {
+        width: 85%;
+        margin-right: 0;
+        order: 1
+    }
+    .title_area .left_title h2 {
+        font-size: 26px;     
+    }
+    .title_area .left_title .b_text {
+        padding-top: 10px;
+        font-size: 16px;
+    }
+    #show .title_area .title_outline {
+        width: 100%;
+        text-align: right;
+        margin-top: 15px;
+        order: 2
+    }
+    #show .show_list {
+        display: block;
+    }
+    .show_list > li {
+        width: 90%;
+        height: auto;
+        padding: 15px;
+        margin: 0 auto 25px;
+    }
+    .show_list > li img {
+        width: 25%; 
+    }
+    .show_list > li .show_detail {
+        width: calc(100% - 25% - 20px);
+    }
+    .show_detail .show_info {margin-bottom: 20px;}
+    .show_detail .detail_info .show_title_link {
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 15px;
+    }
+    .show_detail .detail_info .title_art {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    .show_detail .detail_info .show_desc {
+        margin-bottom: 10px;
+    }
+    .show_detail .detail_info ul {margin-bottom: 18px;}
+    .show_detail .detail_info li {line-height: 24px;}
+    .show_detail .detail_info dl dt {
+        width: 30%;
+        font-weight: 500; 
+    }
+    .show_detail .detail_info dl dd {font-size: 15px;}
+    .show_detail .btn_area {
+        position: static;
+        margin-top: 30px;
+        margin-left: calc(100% - 22vw);
+        display: flex;        
+        flex-direction: column;
+        width: 22vw;
+    }
+    .show_detail .btn_area > a {    
+        margin-right: 0;
+        padding: 8px 20px 8px 40px;
+    }
+    .show_detail .btn_area > a + a {
+        margin-top: 10px;
+    }
+
+    /* style - 삼청각의 멋 */
+    #style {margin-bottom: 0; padding-top: 0;}
+    #style .title_area {
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 35px;
+    }
+    .title_area .left_title {
+        width: 100%;
+        order: 2
+    }
+    #style .title_area .title_outline {
+        position: relative;
+        top: 30px;
+        width: 100%;
+    }
+    .style_list > li {
+        width: 45%;
+        margin-bottom: 25px;
+    }
+    .style_list > li figure {
+        height: 16vh;
+        margin-bottom: 15px;
+    }
+    .style_list > li .style_detail .style_title {font-size: 16px;}
+    .style_list > li .style_detail .text {
+        font-size: 15px;
+        letter-spacing: -1px;
+    }
+
+     /* style - 삼청각의 맛 */
+    .style_list.taste {justify-content: center;}
+    .style_list.taste > li {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    .style_list.taste > li figure {
+        height: 30vh;
+    }
+ 
+    /* 삼청각 이벤트 */
+    #open_event {
+        padding: 30px 0;
+        margin-bottom: 0;
+    }
+    #open_event .text_area > span {
+        font-size: 24px; 
+        margin-bottom: 15px;
+    }
+    /* useInfo - 이용안내 */
+    #use_info {
+        padding-top: 80px; 
+        margin-bottom: 0;
+    }
+    #use_info .useinfo_wrap {
+        justify-content: center;
+        flex-direction: column;        
+    }
+    #use_info .useinfo_wrap > div {
+        width: 100%; 
+        margin-bottom: 40px;
+    }
+    #use_info h3 {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    .left_area .useinfo_list {
+        display: block;
+        margin-bottom: 40px;
+    }
+    .left_area .useinfo_list > li {
+        overflow: hidden;
+        width: 100%;
+        border: 1px solid #cdcdcd;
+        border-radius: 8px;        
+        margin-bottom: 20px;
+    }
+    .left_area .useinfo_list > li > a {
+        display: flex;
+        justify-content: space-between;
+    }
+    .left_area .useinfo_list li figure {
+        width: 40%;
+        height: auto;        
+    }
+    
+    .left_area .useinfo_list li .text_area {
+        width: 55%;
+        padding: 15px;
+        text-align: left;
+        box-sizing: border-box;
+    }
+    .left_area .useinfo_list li .text_area > span {display: none;}
+    .left_area .useinfo_list li .text_area h4 {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    .left_area .useinfo_list li .text_area .text:before {
+        content: '';
+        display: none;
+    }
+
+    /* 공지사항 */
+    .notice .notice_list li > a {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    .notice_list li .date_area {
+        width: 16%; height: 100%;
+        padding: 20px 10px;
+    }
+    .notice_list li .date_area .date {
+        font-size: 34px;
+    }
+    .notice_list li .date_area .yymm {font-size: 14px;}
+    .notice_list .notice_text {width: 78%;}
+    .notice_list .notice_text .list_title {
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: -1px;
+    }
+    .notice_list .notice_text .list_text {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        font-size: 14px;
+    }
+    #use_info .right_area {position: relative;}
+    .right_area .map {margin-bottom: 20px;}
+    .right_area .map iframe {height: 36vh;}
+   
+    /* footer */
+    footer {
+        padding: 35px 5%;
+        box-sizing: border-box;
+    }
+    footer .foot_area {
+        position: relative;
+        flex-direction: column;
+        justify-content: start;
+        height: 76vh;
+    }
+    footer .foot_area > div {
+        width: 100%;
+    }
+    footer .foot_left {
+        text-align: center;
+    }
+    footer .foot_left .f_maintext {
+        font-size: 22px;
+        margin-bottom: 25px;
+        text-align: left;
+    }   
+    
+    footer .foot_right dl + dl {margin-top: 20px;}
+    footer .foot_right dl dt {
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    footer .foot_right dl dd {line-height: 1.5;}
+    footer .foot_right dl strong {
+        display: inline-block;
+        font-weight: 500;
+        margin-right: 20px;
+    }
+    footer .foot_right .locate dd:last-child {margin-top: 15px;}
+    footer .foot_left img {
+        position: absolute;
+        bottom: 25px; left: 50%;
+        transform: translateX(-50%);
+        margin-bottom: 0;
+    }
+    footer .foot_left .copy {
+        position: absolute;
+        bottom: 0; left: 0;
+        width: 100%;
+        color: rgba(0,0,0,0.6);
+    }
+}
+
+@media screen and (max-width: 440px) {
+    header .sns {width: 15%}
+    section .title_area .title_outline {
+        font-size: 55px;
+    }
+    /* show */
+    .show_list li {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;        
+    }
+    #show .show_list li img {
+        width: 35%;
+        margin-bottom: 15px;
+        align-self: center
+    }
+    .show_list > li .show_detail {
+        width: 100%;
+    }
+    .show_detail .btn_area {
+        flex-direction: row;
+        align-items: center;
+        margin-left: 0;
+        width: auto;
+    }
+    .show_detail .btn_area > a + a {
+        margin-top: 0; 
+        margin-left: 10px;
+    }
+
+    /* 삼청각의 멋 */
+    .style_list > li {width: 48%;}
+    .style_list > li .style_detail .btn_view:before {
+        top: 50%; 
+        left: auto; right: 40px;
+        width: 40%; 
+    }
+    .style_list > li .style_detail .text {letter-spacing: -2px;}
+}

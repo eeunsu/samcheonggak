@@ -1,0 +1,362 @@
+@charset "utf-8";
+
+@media screen and (max-width: 600px) {
+    #wrap {
+        overflow: hidden;
+        background: #F3F0EE;
+    }
+
+    section {
+        padding: 50px 6%;
+        background: #fff;
+        margin-bottom: 15px;
+        box-sizing: border-box;
+    }
+
+    .inner {
+        width: 100%;
+    }
+
+    .title_area {
+        text-align: inherit;
+    }
+
+    .title_area h2 {
+        font-size: 20px;
+    }
+
+    .title_area .title_outline {
+        font-size: 65px;
+    }
+
+    /* header */
+    header .inner_header {
+        width: 100%;
+    }
+
+    header .logo {
+        width: 140px;
+        height: 40px;
+    }
+
+    header .sns {
+        top: 20px;
+        left: 15px;
+    }
+
+    header .nav_util {
+        top: 20px;
+        right: 20px;
+    }
+
+    header .btn_reserve {
+        display: none;
+    }
+
+    /* gnb_area */
+    .gnb_area {
+        width: 100%;
+        margin: 20px auto 0;
+    }
+
+    .gnb_area .gnb {
+        display: block;
+        white-space: nowrap;
+        background: #929394;
+    }
+
+    .gnb_area .gnb>li {
+        display: inline-block;
+    }
+
+    .gnb_area .gnb>li>a {
+        display: block;
+        padding: 4px 15px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        font-size: 15px;
+        color: rgba(255, 255, 255, 0.8);
+        font-weight: 500;
+    }
+
+    .gnb_area .gnb>li:hover .sub {
+        display: none;
+    }
+
+    /* main_slide */
+    .main_slider {
+        width: 100%;
+        height: 60vh;
+    }
+
+    .main_slider .mainBg {
+        height: 60vh;        
+        clip-path: none;
+    }
+    /* .main_slider .mainBg:before {
+        position: absolute;
+        content: '';
+        display: block;
+        width: 100%; 
+        height: 100%;
+        transform: scale(0.9);
+        background: rgba(255, 255, 255, 0.5);
+        clip-path: polygon(3% 0, 98% 0, 100% 3%, 100% 97%, 97% 100%, 3% 100%, 0 97%, 0 3%);
+    }
+    .main_slider .mainBg:after {
+        position: absolute;
+        content: '';
+        display: block;
+        width: 100%; 
+        height: 100%;
+        transform: scale(0.8);
+        background: rgba(255, 255, 255, 0.5);
+        clip-path: polygon(2% 0, 98% 0, 100% 2%, 100% 98%, 98% 100%, 2% 100%, 0 98%, 0 2%);
+        z-index: 10;
+    } */
+    /* 오른쪽 위 */
+    .mainBg .main_text {
+        text-align: center;
+        width: 100%;
+        top: 50%; right: 0;    
+        transform: translateY(-50%);
+    }
+    .mainBg .main_text .m_title {
+        font-size: 18px;
+        margin-bottom: 0;
+        opacity: 0.7;
+    }
+    .mainBg .main_text .b_title {
+        font-size: 64px;
+        letter-spacing: 16px;
+    }
+    .mainBg .main_text2 {
+        bottom: 40px;
+        font-weight: 600;
+        font-size: 20px;
+        opacity: .8;
+    }
+
+    /* story */
+    #story {
+        padding: 50px 2.5%;
+        box-sizing: border-box;
+        margin-top: 50px;
+    }
+    #story .cont_wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: stretch;
+    }
+    #story .cont_wrap > .title_area {
+        width: 65%; 
+        text-align: right;
+        margin-bottom: 25px;
+    }
+    #story .cont_wrap > .story_text {
+        width: 70%; 
+        text-align: left;
+        word-break: keep-all;
+    }
+    .story_text .b_text {
+        font-size: 18px;
+        margin-bottom: 0;
+    }
+    .story_text .text {
+        font-size: 15px;
+    }
+    #story .cont_wrap > .side_img {
+        width: 22%; 
+        align-self: end; /* 세로 정렬을 변경해야할 특정 아이템에 선언 */
+        text-align: right;
+    }
+    #story .cont_wrap > .side_img img {width: 60px;}
+
+    /* show - 공연전시정보 */
+    #show .title_area {
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+    #show .title_area .title_outline {
+        width: 70%;
+        text-align: right;
+        align-self: end;
+    }
+    #show .title_area .left_title {
+        width: 75%;
+        margin-right: 0;
+        text-align: left;
+    }
+    .title_area .left_title h2 {
+        position: relative;
+        display: inline-block;
+        font-size: 42px; 
+        font-weight: 400;
+        color: #8c5f46;
+        padding-bottom: 5px;      
+    }
+    .title_area .left_title h2 {
+        font-size: 26px;    
+    }
+    .title_area .left_title h2 > span {
+        font-weight: 600;
+    }
+    .title_area .left_title .b_text {
+        font-size: 16px;
+    }
+    #show .show_list {
+        display: block;
+    }
+    .show_list > li {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+        box-shadow: 10px 10px 0 rgba(0,0,0,0.1);
+        margin-bottom: 40px;
+    }
+    .show_list > li img {
+        width: 30%; 
+    }
+    .show_list > li .show_detail {
+        position: relative;
+        width: calc(100% - 30% - 20px);
+    }
+    .show_detail .show_info {margin-bottom: 30px;}
+    .show_detail .detail_info .show_title_link {
+        display: block;
+        font-weight: 600;
+        font-size: 18px;
+        font-family: 'Noto Serif KR', serif;
+        margin-bottom: 20px;
+    }
+    .show_detail .detail_info .title_art {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    .show_detail .detail_info .show_desc {
+        margin-bottom: 15px;
+        word-break: keep-all;
+    }
+    .show_detail .detail_info ul {margin-bottom: 25px;}
+    .show_detail .detail_info li {line-height: 24px;}
+    .show_detail .detail_info dl div {
+        display: flex;
+        font-weight: 300;
+        margin-bottom: 5px;
+    }
+    .show_detail .detail_info dl dt {
+        width: 80px;
+        font-weight: 500; 
+    }
+    .show_detail .btn_area {
+        position: static;
+        margin-top: 20px;
+    }
+    .show_detail .btn_area > a {
+        padding-left: 40px;
+        margin-right: 0;
+    }
+    .show_detail .btn_area > a + a {
+        background: #fff;
+        color: #553723;
+        margin-top: 10px;
+    }    
+    
+
+
+    /* style - 삼청각의 멋 */
+    #style {}
+    #style .title_area {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        margin-bottom: 80px;
+    }
+    .title_area .left_title {
+        width: 70%;
+        text-align: left;
+    }
+    .style_list {
+        justify-content: center;
+    }
+    .style_list > li {
+        width: 100%;
+        margin-bottom: 70px;
+    }
+    .style_list > li figure {
+        position: relative;
+        height: 21.5vh;
+        background: no-repeat center/cover;
+        margin-bottom: 25px;
+    }
+    .style_list > li figure:before {
+        content: '';
+        display: block;
+        width: 100%; height: 100%;
+        background: rgba(0,0,0,0.2);
+        transition: all 0.3s;
+        opacity: 0;
+    }
+    .style_list > li figure:hover:before {opacity: 1;}
+    .style_list > li  figure.style01 {
+        background-image: url(../img/main/img_style01.jpg);
+    }
+    .style_list > li figure.style02 {
+        background-image: url(../img/main/img_style02.jpg);
+    }
+    .style_list > li figure.style03 {
+        background-image: url(../img/main/img_style03.jpg);
+    }
+    .style_list > li figure.style04 {
+        background-image: url(../img/main/img_style04.jpg);
+    }
+    .style_list > li figure.style05 {
+        background-image: url(../img/main/img_style05.jpg);
+    }
+    .style_list > li figure.style06 {
+        background-image: url(../img/main/img_style06.jpg);
+    }
+    .style_list > li .style_detail {position: relative;}
+    .style_list > li .style_detail .style_title {
+        margin-bottom: 10px;
+        font-size: 18px;
+        font-weight: 500;
+        color: #8c5f46;
+    }
+    .style_list > li .style_detail .text {
+        color: #8c5f46;
+        line-height: 1.6;
+        font-weight: 300;
+    }
+    .style_list > li .style_detail .btn_view {
+        width: 180px;
+        position: absolute;
+        top: 0; right: 0;
+        font-size: 14px;
+        text-align: right;
+        color: rgba(140, 94, 70, 0.6);
+    }
+    .style_list > li .style_detail .btn_view:before {
+        content: '';
+        position: absolute;
+        top: 50%; left: 0;
+        width: 70%; height: 1px;
+        background: rgba(140, 94, 70, 0.3);
+    }
+    .style_list > li .style_detail .btn_view:after {
+        content: '';
+        position: absolute;
+        top: 50%; left: 0;
+        width: 0; height: 1px;
+        background: rgba(140, 94, 70, 0.8);
+        transition: all 0.2s;
+        z-index: 2;
+    }
+    .style_list > li:hover .style_detail .btn_view:after {
+        width: 70%;
+    }
+
+
+}
